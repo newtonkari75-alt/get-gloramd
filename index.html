@@ -15,9 +15,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="googlebot" content="index,follow,max-video-preview:-1,max-image-preview:large,max-snippet:-1" />
 
-    <!-- ========================= -->
     <!-- OPEN GRAPH -->
-    <!-- ========================= -->
     <meta property="og:type" content="product" />
     <meta property="og:title" content="GloraMD Serum Official | Advanced Skincare" />
     <meta property="og:description" content="Support your skin's natural radiance with our advanced formula designed for daily hydration and care." />
@@ -26,18 +24,14 @@
     <meta property="og:image" content="images/gloramd.jpg" />
     <meta property="og:locale" content="en_US" />
 
-    <!-- ========================= -->
     <!-- PERFORMANCE -->
-    <!-- ========================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preload" as="image" href="images/gloramd.jpg">
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
-    <!-- ========================= -->
     <!-- STRUCTURED DATA -->
-    <!-- ========================= -->
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
@@ -45,15 +39,8 @@
     "name": "GloraMD Face Serum",
     "image": "images/gloramd.jpg",
     "description": "GloraMD is a cosmetic serum designed to enhance skin hydration and improve the visible signs of aging.",
-    "brand": {
-        "@type": "Brand",
-        "name": "GloraMD"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "reviewCount": "2306"
-    },
+    "brand": { "@type": "Brand", "name": "GloraMD" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "2306" },
     "offers": {
         "@type": "Offer",
         "url": "https://www.get-gloramd.shop/",
@@ -72,7 +59,7 @@
     <!-- FAVICON -->
     <link rel="icon" href="images/imgi_1_logo_glora-black-gold.svg" type="image/svg+xml">
 
-    <!-- Ativos de UI -->
+    <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -92,19 +79,10 @@
             scroll-behavior: smooth;
         }
 
-        h1, h2, h3, .serif {
-            font-family: 'Playfair Display', serif;
-        }
-
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
         .star-filled { color: var(--brand-gold); fill: var(--brand-gold); }
-        
-        .brand-header {
-            background-color: var(--brand-gold);
-        }
-        
-        .logo-white-mask {
-            filter: brightness(0) invert(1);
-        }
+        .brand-header { background-color: var(--brand-gold); }
+        .logo-white-mask { filter: brightness(0) invert(1); }
 
         .hero-section-bg { 
             position: relative; 
@@ -116,25 +94,18 @@
         }
 
         .hero-overlay-pattern {
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%;
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background-image: radial-gradient(#e5e7eb 0.7px, transparent 0.7px);
             background-size: 32px 32px;
-            opacity: 0.6;
-            z-index: 0;
+            opacity: 0.6; z-index: 0;
         }
 
         .hero-container { position: relative; z-index: 10; }
-
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
         
         .location-card {
-            background: white;
-            border-radius: 1.5rem;
+            background: white; border-radius: 1.5rem;
             box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
             border: 1px solid #f1f5f9;
         }
@@ -144,36 +115,22 @@
             background: linear-gradient(135deg, var(--brand-gold-vibrant) 0%, var(--brand-gold-deep) 100%);
             color: white;
             box-shadow: 0 8px 15px -3px rgba(184, 134, 11, 0.3);
-            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
-        .cta-button:hover {
-            transform: translateY(-3px);
-            filter: brightness(1.1);
-            box-shadow: 0 12px 20px -5px rgba(184, 134, 11, 0.4);
-        }
+        .cta-button:hover { transform: translateY(-3px); filter: brightness(1.1); }
 
         .product-img-container {
             background: linear-gradient(135deg, #d4a75a 0%, #a87e38 100%);
-            border-radius: 2rem;
-            padding: 0;
-            overflow: hidden;
-            aspect-ratio: 1/1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border-radius: 2rem; overflow: hidden; aspect-ratio: 1/1;
+            display: flex; align-items: center; justify-content: center;
         }
 
         .offer-badge {
-            background: rgba(198, 154, 78, 0.08);
-            color: var(--brand-gold);
-            border: 1px solid rgba(198, 154, 78, 0.2);
-            font-weight: 800;
+            background: rgba(198, 154, 78, 0.08); color: var(--brand-gold);
+            border: 1px solid rgba(198, 154, 78, 0.2); font-weight: 800;
         }
 
         .policy-content h4 { font-weight: 800; color: var(--brand-dark); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem; border-bottom: 1px solid #f1f5f9; padding-bottom: 5px; }
         .policy-content p { margin-bottom: 1rem; line-height: 1.6; }
-        .policy-content ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1rem; }
-        .policy-content li { margin-bottom: 0.5rem; }
     </style>
 </head>
 <body class="antialiased">
@@ -193,9 +150,8 @@
             <div class="container mx-auto px-5 py-8 md:py-16 hero-container">
                 <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                     
-                    <!-- Lado Esquerdo / Mobile Top Flow -->
+                    <!-- Lado Esquerdo / Conteúdo -->
                     <div class="reveal active text-center lg:text-left">
-                        <!-- Badges de Topo -->
                         <div class="flex items-center gap-1 mb-4 justify-center lg:justify-start">
                             <i class="star-filled w-3 h-3" data-feather="star"></i>
                             <i class="star-filled w-3 h-3" data-feather="star"></i>
@@ -205,18 +161,16 @@
                             <span class="offer-badge text-[9px] uppercase tracking-[0.2em] px-3 py-1 rounded-full ml-2">Special Skincare Offer</span>
                         </div>
 
-                        <!-- Título -->
                         <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold mb-3 leading-[1.1] text-slate-900">
                             The <span class="italic text-[#C69A4E]">“Age-Defying”</span> Serum Designed For You
                         </h1>
-                        <p class="text-[10px] md:text-[11px] text-slate-400 mb-6 md:mb-8 font-medium uppercase tracking-wider italic">*Individual results may vary based on skin type.</p>
+                        <p class="text-sm md:text-lg text-slate-500 mb-6 font-medium">Formulated to support your daily confidence and radiance.</p>
 
-                        <!-- FOTO MOBILE (Aparece logo após o título apenas no mobile) -->
+                        <!-- FOTO MOBILE (Imediatamente após o título no mobile) -->
                         <div class="lg:hidden mb-8 w-full max-w-[400px] mx-auto product-img-container shadow-2xl overflow-hidden">
                             <img src="images/gloramd.jpg" alt="GloraMD Serum" class="w-full h-full object-cover">
                         </div>
                         
-                        <!-- Lista de Benefícios -->
                         <div class="space-y-3 md:space-y-4 mb-8 md:mb-10">
                             <div class="flex items-start md:items-center gap-3 md:gap-4 text-left justify-start px-2 lg:px-0">
                                 <i data-feather="check" class="w-4 h-4 text-[#C69A4E] shrink-0 mt-1 md:mt-0"></i>
@@ -237,27 +191,26 @@
                         </div>
 
                         <!-- Card de Localização -->
-                        <div class="location-card w-full max-w-[460px] mx-auto lg:mx-0 p-5 md:p-8 mb-8 md:mb-10 border-t-4 border-[#C69A4E]">
-                            <div class="flex items-center justify-between mb-5 md:mb-6">
+                        <div class="location-card w-full max-w-[460px] mx-auto lg:mx-0 p-5 md:p-8 mb-8 border-t-4 border-[#C69A4E]">
+                            <div class="flex items-center justify-between mb-5">
                                 <p class="text-[9px] md:text-[11px] font-black text-slate-500 uppercase tracking-widest">Select Destination:</p>
-                                <span class="bg-[#b48d4d] text-white px-2 py-0.5 text-[7px] md:text-[8px] font-bold rounded uppercase tracking-widest shadow-sm">Global Shipping</span>
+                                <span class="bg-[#b48d4d] text-white px-2 py-0.5 text-[7px] font-bold rounded uppercase tracking-widest shadow-sm">Global Shipping</span>
                             </div>
                             
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
-                                <a href="https://www.clickrtrckr.com/2LXFFTP/7KPTQGL/" class="cta-button flex items-center justify-center px-4 py-3.5 md:px-5 md:py-4 rounded-xl md:rounded-2xl font-extrabold text-xs md:text-sm group tracking-tight text-center">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <a href="https://www.clickrtrckr.com/2LXFFTP/7KPTQGL/" class="cta-button flex items-center justify-center px-4 py-3.5 rounded-xl font-extrabold text-xs md:text-sm group tracking-tight text-center">
                                     <span>United States</span>
                                 </a>
-
-                                <a href="https://www.clickrtrckr.com/2LXFFTP/7KPTQGL/" class="cta-button flex items-center justify-center px-4 py-3.5 md:px-5 md:py-4 rounded-xl md:rounded-2xl font-extrabold text-xs md:text-sm group tracking-tight text-center">
+                                <a href="https://www.clickrtrckr.com/2LXFFTP/7KPTQGL/" class="cta-button flex items-center justify-center px-4 py-3.5 rounded-xl font-extrabold text-xs md:text-sm group tracking-tight text-center">
                                     <span>Global</span>
                                 </a>
                             </div>
                             
-                            <div class="mt-5 md:mt-6 flex flex-wrap items-center justify-center lg:justify-between gap-3 md:gap-4 border-t border-slate-50 pt-5 md:pt-6">
+                            <div class="mt-5 flex flex-wrap items-center justify-center lg:justify-between gap-3 border-t border-slate-50 pt-5">
                                 <div class="flex -space-x-2">
-                                    <img class="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=sk1" alt="User">
-                                    <img class="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=sk2" alt="User">
-                                    <img class="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=sk3" alt="User">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=sk1">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=sk2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=sk3">
                                     <div class="w-6 h-6 rounded-full border-2 border-white bg-amber-50 flex items-center justify-center text-[8px] font-bold text-[#C69A4E]">+4k</div>
                                 </div>
                                 <p class="text-slate-500 text-[9px] md:text-[10px] font-bold flex items-center gap-1.5">
@@ -267,9 +220,9 @@
                             </div>
                         </div>
 
-                        <!-- As Seen In (Apenas no Mobile abaixo dos botões) -->
-                        <div class="as-seen-in flex flex-col items-center lg:items-start pb-4 lg:pb-0">
-                            <p class="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-300 mb-3 md:mb-4">Recognized Excellence</p>
+                        <!-- As Seen In -->
+                        <div class="as-seen-in flex flex-col items-center lg:items-start pb-4">
+                            <p class="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-300 mb-3">Recognized Excellence</p>
                             <div class="flex items-center gap-6 md:gap-10 opacity-30">
                                 <span class="serif text-xs md:text-sm">VOGUE</span>
                                 <span class="serif text-xs md:text-sm">ELLE</span>
@@ -278,72 +231,78 @@
                         </div>
                     </div>
 
-                    <!-- Lado Direito: Foto do Produto (Escondida no Mobile) -->
+                    <!-- Lado Direito: Foto Desktop -->
                     <div class="reveal active delay-200 hidden lg:flex justify-center lg:justify-end">
                         <div class="w-full max-w-[500px] product-img-container shadow-2xl overflow-hidden">
                             <img src="images/gloramd.jpg" alt="GloraMD Serum" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000">
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
         <!-- Seção de Estatísticas -->
-        <section class="bg-[#0f172a] py-12 md:py-16">
+        <section class="bg-[#0f172a] py-12">
             <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
+                <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                     <div>
-                        <p class="text-[#C69A4E] text-2xl md:text-4xl font-bold mb-1 md:mb-2">98%</p>
+                        <p class="text-[#C69A4E] text-2xl md:text-4xl font-bold mb-1">98%</p>
                         <p class="text-slate-400 text-[8px] md:text-[10px] uppercase tracking-[0.2em] font-black">Noticed Improvements*</p>
                     </div>
                     <div>
-                        <p class="text-[#C69A4E] text-2xl md:text-4xl font-bold mb-1 md:mb-2">100%</p>
+                        <p class="text-[#C69A4E] text-2xl md:text-4xl font-bold mb-1">100%</p>
                         <p class="text-slate-400 text-[8px] md:text-[10px] uppercase tracking-[0.2em] font-black">Vegan Formula</p>
                     </div>
                     <div>
-                        <p class="text-[#C69A4E] text-2xl md:text-4xl font-bold mb-1 md:mb-2">24h</p>
+                        <p class="text-[#C69A4E] text-2xl md:text-4xl font-bold mb-1">24h</p>
                         <p class="text-slate-400 text-[8px] md:text-[10px] uppercase tracking-[0.2em] font-black">Intense Hydration</p>
                     </div>
                     <div>
-                        <p class="text-[#C69A4E] text-2xl md:text-4xl font-bold mb-1 md:mb-2">45k+</p>
+                        <p class="text-[#C69A4E] text-2xl md:text-4xl font-bold mb-1">45k+</p>
                         <p class="text-slate-400 text-[8px] md:text-[10px] uppercase tracking-[0.2em] font-black">Community Members</p>
                     </div>
                 </div>
-                <p class="text-[8px] md:text-[9px] text-slate-500 text-center mt-6 md:mt-8 uppercase tracking-widest">*Based on consumer perception studies.</p>
+                <p class="text-[8px] text-slate-500 text-center mt-6 uppercase tracking-widest">*Based on consumer perception studies.</p>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-white text-slate-400 py-10 md:py-12 border-t border-slate-50">
+    <!-- Footer Area / Final Disclaimer -->
+    <div class="bg-white pt-10 text-center px-6">
+         <p class="text-[10px] md:text-[11px] text-slate-400 font-medium uppercase tracking-wider italic">
+            *Individual results may vary based on skin type / Os resultados individuais podem variar de acordo com o tipo de pele.
+         </p>
+    </div>
+
+    <!-- Footer Slim -->
+    <footer class="bg-white text-slate-400 py-10 border-t border-slate-50">
         <div class="container mx-auto px-6 text-center">
-            <div class="mb-6 md:mb-8">
-                <img src="images/imgi_1_logo_glora-black-gold.svg" alt="GloraMD" class="h-5 md:h-6 mx-auto mb-4 opacity-20 grayscale">
+            <div class="mb-6">
+                <img src="images/imgi_1_logo_glora-black-gold.svg" alt="GloraMD" class="h-5 mx-auto mb-4 opacity-20 grayscale">
                 <div class="space-y-1">
                     <p class="text-[9px] md:text-[10px] font-bold text-slate-800 uppercase tracking-widest">UAB Commerce Core</p>
-                    <p class="text-[8px] md:text-[9px] uppercase tracking-widest opacity-60">Official Authorized Global Distributor</p>
-                    <p class="text-[8px] md:text-[9px] mt-1">Savanorių pr. 363, Kaunas, Lithuania | Reg: 302566167</p>
-                    <p class="text-[8px] md:text-[9px] font-bold text-[#C69A4E]">support@get-gloramd.com | +1 (331) 207-9814</p>
+                    <p class="text-[8px] uppercase tracking-widest opacity-60 font-bold">Official Authorized Global Distributor</p>
+                    <p class="text-[8px] mt-1">Savanorių pr. 363, Kaunas, Lithuania | Reg: 302566167</p>
+                    <p class="text-[8px] font-bold text-[#C69A4E]">support@get-gloramd.com | +1 (331) 207-9814</p>
                 </div>
             </div>
             
-            <div class="flex justify-center flex-wrap gap-x-6 md:gap-x-8 gap-y-2.5 mb-8 md:mb-10 text-[8px] md:text-[9px] font-bold uppercase tracking-[0.2em] text-slate-500">
-                <button onclick="openModal('shipping')" class="hover:text-[#C69A4E] transition-colors">Shipping & Delivery</button>
+            <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-8 text-[8px] md:text-[9px] font-bold uppercase tracking-[0.2em] text-slate-500">
+                <button onclick="openModal('shipping')" class="hover:text-[#C69A4E] transition-colors">Shipping & Returns</button>
                 <button onclick="openModal('terms')" class="hover:text-[#C69A4E] transition-colors">Terms of Service</button>
                 <button onclick="openModal('privacy')" class="hover:text-[#C69A4E] transition-colors">Privacy Policy</button>
                 <button onclick="openModal('contact')" class="hover:text-[#C69A4E] transition-colors">Contact Us</button>
             </div>
 
-            <div class="max-w-4xl mx-auto text-[7px] md:text-[8px] leading-relaxed opacity-40 space-y-3 md:space-y-4 pt-6 md:pt-8 border-t border-slate-50">
+            <div class="max-w-4xl mx-auto text-[7px] md:text-[8px] leading-relaxed opacity-40 space-y-3 pt-6 border-t border-slate-50">
                 <p>Disclaimer: This site is not a part of the Google™ or Meta Inc. website. Additionally, this site is NOT endorsed by Google™ or Meta Inc. in any way.</p>
-                <p>GloraMD is a cosmetic serum. The statements on this website have not been evaluated by the Food and Drug Administration or any medical authority. This product is not intended to diagnose, treat, cure, or prevent any disease. <strong>Individual results may vary</strong> based on unique skin conditions. Always consult a dermatologist for professional skin health advice before starting a new regimen.</p>
-                <p class="font-bold text-slate-500 uppercase tracking-[0.2em] pt-1 md:pt-2">&copy; 2026 GLORAMD SKINCARE. ALL RIGHTS RESERVED.</p>
+                <p>GloraMD is a cosmetic serum. The statements on this website have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary based on unique skin conditions.</p>
+                <p class="font-bold text-slate-500 uppercase tracking-[0.2em] pt-1">&copy; 2026 GLORAMD SKINCARE. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
     </footer>
 
-    <!-- MODAL -->
+    <!-- MODAL SYSTEM -->
     <div id="policy-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true">
         <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
@@ -366,15 +325,12 @@
 
     <script>
         feather.replace();
-
         const revealElements = () => {
             const reveals = document.querySelectorAll(".reveal");
             reveals.forEach(el => {
                 const windowHeight = window.innerHeight;
                 const elementTop = el.getBoundingClientRect().top;
-                if (elementTop < windowHeight - 100) {
-                    el.classList.add("active");
-                }
+                if (elementTop < windowHeight - 100) { el.classList.add("active"); }
             });
         };
         window.addEventListener("scroll", revealElements);
@@ -385,45 +341,10 @@
         const modalContent = document.getElementById('modal-content-area');
 
         const modalData = {
-            shipping: {
-                title: "Shipping & Delivery",
-                content: `
-                    <h4>Order Processing</h4>
-                    <p>Orders are typically processed within 12 business hours. Once shipped, you will receive a tracking number via email.</p>
-                    <h4>Delivery Times</h4>
-                    <p>Typical delivery takes 5-12 business days depending on location. International shipments are managed through secure logistics partners.</p>
-                    <h4>90-Day Satisfaction Guarantee</h4>
-                    <p>We stand behind GloraMD. If you are not satisfied with your experience, contact support@get-gloramd.com within 90 days for a refund of the purchase price (less shipping costs).</p>
-                `
-            },
-            terms: {
-                title: "Terms of Service",
-                content: `
-                    <h4>Usage Policy</h4>
-                    <p>GloraMD is intended for topical cosmetic use only. By using this website, you agree to our terms and conditions regarding personal purchase and non-resale.</p>
-                    <h4>Health Information</h4>
-                    <p>Information provided is for educational purposes only and is not medical advice. Consult with a qualified healthcare professional regarding specific health or skin conditions.</p>
-                `
-            },
-            privacy: {
-                title: "Privacy Policy",
-                content: `
-                    <h4>Data Protection</h4>
-                    <p>We take your privacy seriously. Your data is used strictly for order fulfillment and internal communication. We utilize industry-standard encryption to protect your transaction information.</p>
-                    <h4>GDPR Compliance</h4>
-                    <p>For our EU customers, we adhere to GDPR standards. You have the right to access or request deletion of your personal data at any time.</p>
-                `
-            },
-            contact: {
-                title: "Contact Information",
-                content: `
-                    <h4>Reach Us</h4>
-                    <p>Our global support team is available to assist you with order status, tracking, and product questions.</p>
-                    <p><strong>Email:</strong> support@get-gloramd.com</p>
-                    <p><strong>Phone:</strong> +1 (331) 207-9814</p>
-                    <p><strong>Address:</strong> Savanorių pr. 363, Kaunas, Lithuania</p>
-                `
-            }
+            shipping: { title: "Shipping & Delivery", content: "<h4>Order Processing</h4><p>Orders are processed within 12 business hours. Typical delivery takes 5-12 business days.</p>" },
+            terms: { title: "Terms of Service", content: "<h4>Usage Policy</h4><p>GloraMD is for topical cosmetic use only. Non-resale terms apply.</p>" },
+            privacy: { title: "Privacy Policy", content: "<h4>Data Protection</h4><p>We use standard encryption to protect your transaction information.</p>" },
+            contact: { title: "Contact Information", content: "<h4>Reach Us</h4><p><strong>Email:</strong> support@get-gloramd.com</p><p><strong>Phone:</strong> +1 (331) 207-9814</p>" }
         };
 
         function openModal(type) {
@@ -433,15 +354,8 @@
             modal.classList.remove('hidden');
             document.body.classList.add('modal-open');
         }
-        
-        function closeModal() { 
-            modal.classList.add('hidden'); 
-            document.body.classList.remove('modal-open'); 
-        }
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === "Escape") closeModal();
-        });
+        function closeModal() { modal.classList.add('hidden'); document.body.classList.remove('modal-open'); }
+        document.addEventListener('keydown', (e) => { if (e.key === "Escape") closeModal(); });
     </script>
 </body>
 </html>
