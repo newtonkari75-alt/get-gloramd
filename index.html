@@ -72,7 +72,7 @@
     <!-- FAVICON -->
     <link rel="icon" href="images/imgi_1_logo_glora-black-gold.svg" type="image/svg+xml">
 
-    <!-- Ativos de UI -->
+    <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -98,6 +98,15 @@
 
         .star-filled { color: var(--brand-gold); fill: var(--brand-gold); }
         
+        /* Header Custom Color */
+        .brand-header {
+            background-color: var(--brand-gold);
+        }
+        
+        .logo-white-mask {
+            filter: brightness(0) invert(1);
+        }
+
         .hero-section-bg { 
             position: relative; 
             background-color: #fdfdfd; 
@@ -170,15 +179,15 @@
 </head>
 <body class="antialiased">
 
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-100 py-4 px-6 md:px-12 sticky top-0 z-50">
+    <!-- Header com Cor Dourada e Logo Branca -->
+    <header class="brand-header py-4 px-6 md:px-12 sticky top-0 z-50 shadow-md">
         <div class="container mx-auto flex justify-center items-center">
-            <img src="images/imgi_1_logo_glora-black-gold.svg" alt="GloraMD Logo" class="h-6 md:h-8 w-auto">
+            <img src="images/imgi_1_logo_glora-black-gold.svg" alt="GloraMD Logo" class="h-6 md:h-8 w-auto logo-white-mask">
         </div>
     </header>
 
     <main>
-        <!-- Hero Section (Layout de Duas Colunas Restaurado) -->
+        <!-- Hero Section (Layout Duas Colunas) -->
         <section id="order" class="hero-section-bg">
             <div class="hero-overlay-pattern"></div>
             
@@ -220,7 +229,7 @@
                             </div>
                         </div>
 
-                        <!-- Card de Localização / Botões (Sem Bandeiras/Emoticons) -->
+                        <!-- Card de Localização -->
                         <div class="location-card w-full max-w-[460px] mx-auto lg:mx-0 p-6 md:p-8 mb-10 border-t-4 border-[#C69A4E]">
                             <div class="flex items-center justify-between mb-6">
                                 <p class="text-[11px] font-black text-slate-500 uppercase tracking-widest">Select Destination:</p>
@@ -272,7 +281,7 @@
             </div>
         </section>
 
-        <!-- Stats Section (Compliant) -->
+        <!-- Seção de Estatísticas -->
         <section class="bg-[#0f172a] py-16">
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
@@ -312,7 +321,7 @@
             </div>
             
             <div class="flex justify-center flex-wrap gap-x-8 gap-y-3 mb-10 text-[9px] font-bold uppercase tracking-[0.2em] text-slate-500">
-                <button onclick="openModal('shipping')" class="hover:text-[#C69A4E] transition-colors">Shipping & Delivery</button>
+                <button onclick="openModal('shipping')" class="hover:text-[#C69A4E] transition-colors">Shipping & Returns</button>
                 <button onclick="openModal('terms')" class="hover:text-[#C69A4E] transition-colors">Terms of Service</button>
                 <button onclick="openModal('privacy')" class="hover:text-[#C69A4E] transition-colors">Privacy Policy</button>
                 <button onclick="openModal('contact')" class="hover:text-[#C69A4E] transition-colors">Contact Us</button>
@@ -326,7 +335,7 @@
         </div>
     </footer>
 
-    <!-- MODAL -->
+    <!-- MODAIS -->
     <div id="policy-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true">
         <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
